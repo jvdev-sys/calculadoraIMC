@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule seu IMC</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+   
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Calcule seu IMC</h1>
+        <table class="tabela">
+            <tr>
+                <td>Menor que 16,5</td>
+                <td>Muito abaixo do normal</td>
+            </tr>
+            <tr>
+                <td>Entre 16,5 e 18,5</td>
+                <td>Peso abaixo do normal</td>
+            </tr>
+            <tr>
+                <td>Entre 18,5 e 24,99</td>
+                <td>Peso normal</td>
+            </tr>
+            <tr>
+                <td>Entre 25 e 29.99</td>
+                <td>Pré obeso</td>
+            </tr>
+            <tr>
+                <td>Entre 30 e 34,99</td>
+                <td>Obesidade grau I</td>
+            </tr>
+            <tr>
+                <td>Entre 35 e 39,99</td>
+                <td>Obesidade grau II</td>
+            </tr>
+            <tr>
+                <td>Maior que 40</td>
+                <td>Obesidade grau III</td>
+            </tr>
+        </table>
+        <form action="/" class="form" name="form">
+            <label for="peso" class="label">Peso</label>
+            <input type="text" id="peso" class="input">
+            <p class="erro" id="erroPeso"></p>
+            <label for="altura" class="label" >Altura</label>
+            <input type="text" id="altura" class="input">
+            <p class="erro" id="erroAltura"></p>
+            <button type="submit" class="botao">Enviar</button>
+        </form>
+        <h2 class="resultado"></h2>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
